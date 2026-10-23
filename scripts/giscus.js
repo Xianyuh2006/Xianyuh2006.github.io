@@ -5,7 +5,9 @@ const giscus = `
 <script>
   (() => {
     const comments = document.getElementById('comments');
-    const main = document.getElementById('main');
+    const main = document.querySelector('.main-inner.post')
+      || document.getElementById('main')
+      || document.querySelector('main');
 
     if (!comments || !main) return;
 
