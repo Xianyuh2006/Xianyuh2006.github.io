@@ -1,0 +1,6 @@
+# NexT theme overrides
+mermaid:
+  enable: true
+  theme:
+    light: default
+    dark: dark

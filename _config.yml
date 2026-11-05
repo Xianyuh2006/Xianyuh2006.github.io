@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://xianyuh2006.github.io
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -50,6 +50,8 @@ highlight:
   tab_replace: ''
   wrap: true
   hljs: false
+  exclude_languages:
+    - mermaid
 prismjs:
   preprocess: true
   line_number: true
@@ -97,6 +99,12 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
+
+# Server-side MathJax rendering (hexo-filter-mathjax)
+mathjax:
+  tags: none
+  single_dollars: true
+  every_page: true
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
